@@ -1,0 +1,188 @@
+Python Chapter 1: Introduction to Python
+
+_____________________________________________________________________________________________________________
+
+ 1. Introduction to Python
+Python is a high-level, interpreted programming language known for its simplicity and readability.
+It supports multiple programming paradigms, including procedural, object-oriented, and functional programming.
+
+Key Characteristics of Python:
+- Interpreted Language: Executes code line-by-line, making debugging easier.
+- Dynamically Typed: Variables do not need explicit type declarations.
+- Extensive Libraries: Provides libraries like NumPy (for numerical computing), 
+   Pandas (for data analysis), Tkinter (for GUI applications), and many more.
+- Cross-platform Compatibility: Runs on different operating systems, including Windows, macOS, and Linux.
+- High-Level Language: Focuses on ease of coding and readability, making it beginner-friendly.
+
+_____________________________________________________________________________________________________________
+
+ 2. Features of Python
+Python offers several features that make it a popular choice for developers.
+
+- Easy to Learn: The syntax is simple and similar to English.
+- Interpreted: Python executes code line-by-line, making debugging easy.
+- Dynamically Typed: No need to define variable types explicitly.
+- Cross-platform: Python runs on Windows, macOS, and Linux without modification.
+- Extensive Libraries: Comes with built-in modules and third-party libraries for various applications 
+   like web development, data science, and machine learning.
+- Object-Oriented: Supports object-oriented programming (OOP) with concepts like classes,
+  objects, inheritance, and polymorphism.
+
+Example:
+python
+class Animal:
+    def __init__(self, name):
+        self.name = name
+    
+    def speak(self):
+        return "This animal makes a sound"
+
+class Dog(Animal):
+    def speak(self):
+        return "Bark"
+
+d = Dog("Buddy")
+print(d.speak())  # Output: Bark
+
+
+_____________________________________________________________________________________________________________
+
+ 3. Installing & Running Python
+
+Steps to Install Python:
+1. Download Python from [python.org](https://www.python.org/downloads/).
+2. Install the downloaded setup file.
+3. Verify installation using python --version in the terminal.
+
+Running Python Programs:
+- Interactive Mode: Run Python by typing python in the terminal.
+- Script Mode: Save the code in a .py file and run it using python filename.py.
+
+Example:
+python
+print("Hello, World!")  # Output: Hello, World!
+
+
+_____________________________________________________________________________________________________________
+
+ 4. Basic Syntax & Variables
+
+Indentation in Python:
+Python uses indentation instead of {} or ; like Java or C++.
+
+Example:
+python
+if True:
+    print("Hello, Python")  # Correct indentation
+
+
+Variables and Data Types:
+Python supports different data types:
+- String: Used for textual data (str). Example: name = "MSBTE"
+- Integer: Whole numbers (int). Example: age = 21
+- Float: Decimal numbers (float). Example: pi = 3.14
+- Boolean: True/False values (bool). Example: is_pass = True
+- List: Ordered collection of elements (list). Example: fruits = ["Apple", "Banana", "Cherry"]
+- Tuple: Immutable collection of elements (tuple). Example: coordinates = (10, 20)
+- Dictionary: Key-value pairs (dict). Example: student = {"name": "John", "age": 21}
+- Set: Unordered collection of unique elements (set). Example: unique_numbers = {1, 2, 3, 4}
+
+Example:
+python
+name = "MSBTE"
+age = 21
+pi = 3.14
+is_pass = True
+fruits = ["Apple", "Banana", "Cherry"]
+coordinates = (10, 20)
+student = {"name": "John", "age": 21}
+unique_numbers = {1, 2, 3, 4}
+
+print(name, age, pi, is_pass)
+print(fruits)
+print(coordinates)
+print(student)
+print(unique_numbers)
+
+
+_____________________________________________________________________________________________________________
+
+ 5. Taking User Input
+Python allows user interaction using the input() function.
+
+Example:
+python
+user_name = input("Enter your name: ")
+print("Hello, " + user_name)
+
+
+Example with Type Conversion:
+python
+num = int(input("Enter a number: "))  # Converts input to integer
+print("You entered:", num)
+
+
+_____________________________________________________________________________________________________________
+
+ 6. Conditional Statements
+Python supports if, elif, and else conditions for decision-making.
+
+Example:
+python
+num = int(input("Enter a number: "))
+if num > 0:
+    print("Positive number")
+elif num == 0:
+    print("Zero")
+else:
+    print("Negative number")
+
+
+Nested If Example:
+python
+age = int(input("Enter your age: "))
+if age >= 18:
+    if age >= 60:
+        print("Senior Citizen")
+    else:
+        print("Adult")
+else:
+    print("Minor")
+
+_____________________________________________________________________________________________________________
+
+ 7. Loops in Python
+Loops help execute code repeatedly.
+
+For Loop Example:
+python
+for i in range(5):  
+    print(i)  # Prints 0 to 4
+
+
+While Loop Example:
+python
+num = 5
+while num > 0:
+    print(num)
+    num -= 1  # Decrement
+
+
+Loop with Break Statement:
+python
+for i in range(10):
+    if i == 5:
+        break  # Stops loop when i is 5
+    print(i)
+
+
+Loop with Continue Statement:
+python
+for i in range(5):
+    if i == 2:
+        continue  # Skips iteration when i is 2
+    print(i)
+
+
+_____________________________________________________________________________________________________________
+

@@ -1,0 +1,179 @@
+Chapter 3: Data Structures in Python
+
+________________________________________________________________________________
+
+Data structures in Python are used to store, manage, and organize data efficiently. 
+This chapter covers lists, tuples, sets, and dictionaries in depth with detailed explanations, functions, methods, and examples.
+
+________________________________________________________________________________
+
+I. Lists
+
+   1. Definition
+      - A list is an ordered collection of elements that can hold different data types.
+      - Lists are mutable, meaning their elements can be changed.
+      - Syntax:
+
+        python
+        my_list = [element1, element2, element3, ...]
+        
+
+   2. Accessing Elements
+      - Individual elements are accessed using indexing (starting from 0 for the first element).
+      - Syntax:
+
+        python
+        list_name[index]
+        
+      - Example:
+
+        python
+        my_list = [10, 20, 30, 40]
+        print(my_list[1])  # Output: 20
+        
+
+   3. Common List Methods
+      - append(value): Adds an element at the end.
+      - insert(index, value): Inserts an element at the specified position.
+      - remove(value): Removes the first occurrence of a value.
+      - pop(index): Removes and returns the element at the given index.
+      - sort(): Sorts the list in ascending order.
+      - reverse(): Reverses the list order.
+      - len(list): Returns the number of elements.
+      
+   Example:
+   python
+   my_list = [10, 20, 30]
+   my_list.append(40)
+   print(my_list)  # Output: [10, 20, 30, 40]
+   
+
+
+________________________________________________________________________________
+
+II. Tuples
+
+   1. Definition
+      - A tuple is an ordered collection of elements that can hold different data types.
+      - Tuples are immutable, meaning their elements cannot be changed after creation.
+      - Syntax:
+
+        python
+        my_tuple = (element1, element2, element3, ...)
+        
+
+   2. Accessing Elements
+      - Elements in a tuple are accessed using indexing.
+      - Syntax:
+
+        python
+        tuple_name[index]
+        
+      - Example:
+
+        python
+        my_tuple = (10, 20, 30, 40)
+        print(my_tuple[2])  # Output: 30
+        
+
+   3. Common Tuple Methods
+      - count(value): Returns the number of times a value appears.
+      - index(value): Returns the index of the first occurrence of a value.
+      
+   Example:
+   python
+   my_tuple = (10, 20, 30, 20)
+   print(my_tuple.count(20))  # Output: 2
+   
+
+
+________________________________________________________________________________
+
+III. Sets
+
+   1. Definition
+      - A set is an unordered collection of unique elements.
+      - Sets are mutable, but they do not allow duplicate values.
+      - Syntax:
+
+        python
+        my_set = {element1, element2, element3, ...}
+        
+
+   2. Common Set Methods
+      - add(value): Adds a single element.
+      - update(iterable): Adds multiple elements.
+      - remove(value): Removes the element (raises an error if not found).
+      - discard(value): Removes the element (does not raise an error if not found).
+      - pop(): Removes a random element.
+      - clear(): Removes all elements.
+      
+   Example:
+   python
+   my_set = {10, 20, 30}
+   my_set.add(40)
+   print(my_set)  # Output: {10, 20, 30, 40}
+   
+
+
+________________________________________________________________________________
+
+IV. Dictionaries
+
+   1. Definition
+      - A dictionary is an unordered collection of key-value pairs.
+      - Keys must be unique and immutable, while values can be of any type.
+      - Syntax:
+
+        python
+        my_dict = {key1: value1, key2: value2, key3: value3, ...}
+        
+
+   2. Accessing Elements
+      - Dictionary elements are accessed using keys.
+      - Syntax:
+
+        python
+        dict_name[key]
+        
+      - Example:
+
+        python
+        my_dict = {'name': 'Alice', 'age': 25}
+        print(my_dict['name'])  # Output: Alice
+        
+
+   3. Common Dictionary Methods
+      - keys(): Returns a list of all keys.
+      - values(): Returns a list of all values.
+      - items(): Returns a list of key-value pairs.
+      - get(key, default): Returns the value of a key (or default if not found).
+      - update(dict): Updates the dictionary with another dictionary.
+      - pop(key): Removes and returns a value by key.
+      - clear(): Removes all elements.
+      
+   Example:
+   python
+   my_dict = {'name': 'Alice', 'age': 25}
+   my_dict.update({'city': 'New York'})
+   print(my_dict)  # Output: {'name': 'Alice', 'age': 25, 'city': 'New York'}
+   
+
+   
+________________________________________________________________________________
+
+V. Summary
+
+   - Lists: Ordered, mutable, supports indexing and slicing.
+   - Methods: append(), insert(), remove(), pop(), sort(), reverse(), len()
+   - Tuples: Ordered, immutable, supports indexing.
+   - Methods: count(), index()
+   - Sets: Unordered, mutable, unique elements.
+   - Methods: add(), update(), remove(), discard(), pop(), clear()
+   - Dictionaries: Key-value pairs, mutable, unordered.
+   - Methods: keys(), values(), items(), get(), update(), pop(), clear()
+
+Data structures are crucial for efficient programming. Choosing the right structure ensures better performance and data organization.
+
+________________________________________________________________________________
+

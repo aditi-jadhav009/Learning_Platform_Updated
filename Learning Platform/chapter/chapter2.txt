@@ -1,0 +1,138 @@
+Chapter 2: Control Flow in Python
+
+________________________________________________________________________________
+
+Control flow in Python determines the execution order of statements based on conditions and loops. 
+This chapter covers selection statements, iteration statements, and jump statements in detail.
+
+________________________________________________________________________________
+
+I. Selection Statements
+
+   1. if Statement
+      - The if statement is used to execute a block of code only if a specified condition evaluates to True. 
+      - If the condition is False, the block is skipped.
+      - Syntax:
+
+        if condition:
+            statement(s)
+
+      - Example:
+
+        num = 10
+        if num > 5:
+            print("Number is greater than 5")
+
+   2. if-else Statement
+      - The if-else statement allows two possible execution paths. 
+      - If the condition is True, the if block executes; otherwise, the else block executes.
+      - Syntax:
+
+        if condition:
+            statement(s)
+        else:
+            statement(s)
+
+      - Example:
+
+        num = 3
+        if num % 2 == 0:
+            print("Even number")
+        else:
+            print("Odd number")
+
+   3. if-elif-else Statement
+      - The if-elif-else statement allows checking multiple conditions sequentially. 
+      - Only one block executes based on the first True condition.
+      - Syntax:
+
+        if condition1:
+            statement(s)
+        elif condition2:
+            statement(s)
+        else:
+            statement(s)
+
+      - Example:
+
+        marks = 75
+        if marks >= 90:
+            print("Grade: A")
+        elif marks >= 75:
+            print("Grade: B")
+        else:
+            print("Grade: C")
+
+________________________________________________________________________________
+
+II. Iteration Statements (Loops)
+
+   1. for Loop
+      - A for loop is used for iterating over sequences like lists, tuples, strings, or ranges.
+      - Syntax:
+
+        for variable in sequence:
+            statement(s)
+
+      - Example:
+
+        for i in range(5):
+            print("Iteration", i)
+
+   2. while Loop
+      - A while loop executes as long as the condition is True.
+      - Syntax:
+
+        while condition:
+            statement(s)
+
+      - Example:
+
+        count = 1
+        while count <= 5:
+            print(count)
+            count += 1
+
+________________________________________________________________________________
+
+III. Jump Statements
+
+   1. break Statement
+      - The break statement terminates a loop immediately.
+      - Example:
+
+        for i in range(10):
+            if i == 5:
+                break
+            print(i)
+
+   2. continue Statement
+      - The continue statement skips the current iteration and moves to the next.
+      - Example:
+
+        for i in range(5):
+            if i == 2:
+                continue
+            print(i)
+
+   3. pass Statement
+      - The pass statement is a placeholder used where a statement is required but not needed yet.
+      - Example:
+
+        for i in range(5):
+            if i == 3:
+                pass
+            print(i)
+
+________________________________________________________________________________
+
+IV. Summary
+
+   - Selection statements: if, if-else, if-elif-else for decision-making.
+   - Loops: for and while for iteration.
+   - Jump statements: break, continue, pass for controlling loops.
+
+Understanding control flow is essential for writing efficient Python programs. It helps in executing different blocks of code based on conditions, iterating over sequences, and controlling loop execution effectively.
+
+________________________________________________________________________________
+

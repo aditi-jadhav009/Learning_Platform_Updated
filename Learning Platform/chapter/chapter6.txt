@@ -1,0 +1,200 @@
+Chapter 6: File I/O Handling and Exception Handling in Python
+
+________________________________________________________________________________
+
+File I/O (Input/Output) handling in Python allows reading and writing data from external files, while exception handling helps in managing errors and unexpected situations efficiently.
+
+________________________________________________________________________________
+
+I. I/O Operations
+
+   1. Reading Input from Keyboard
+      - input() function is used to read user input.
+      - Syntax:
+        python
+        user_input = input("Enter your name: ")
+        
+      - Example:
+        python
+        name = input("Enter your name: ")
+        print("Hello,", name)
+        
+   
+   2. Printing Output to Screen
+      - print() function is used to display output.
+      - Syntax:
+        python
+        print("Hello, World!")
+        
+      - Example:
+        python
+        name = "Alice"
+        print("Welcome,", name)
+        
+
+________________________________________________________________________________
+
+II. File Handling
+
+   1. Opening a File
+      - open() function is used to open a file.
+      - Syntax:
+        python
+        file = open("filename", "mode")
+        
+      - Example:
+        python
+        file = open("example.txt", "r")
+        print(file.read())
+        file.close()
+        
+
+   2. File Modes
+      - 'r' - Read mode (default)
+      - 'w' - Write mode (creates a new file or overwrites existing content)
+      - 'a' - Append mode (adds new content at the end of the file)
+      - 'x' - Exclusive creation mode (fails if file exists)
+      - 'b' - Binary mode
+      - 't' - Text mode (default)
+      
+   3. Reading a File
+      - read(), readline(), readlines() methods are used.
+      - Example:
+        python
+        file = open("example.txt", "r")
+        content = file.read()
+        print(content)
+        file.close()
+        
+      
+   4. Writing to a File
+      - write() method writes content to a file.
+      - Example:
+        python
+        file = open("example.txt", "w")
+        file.write("Hello, Python!")
+        file.close()
+        
+      
+   5. Appending Data
+      - append() mode is used to add data to an existing file.
+      - Example:
+        python
+        file = open("example.txt", "a")
+        file.write("\nAdding new line")
+        file.close()
+        
+      
+   6. Closing a File
+      - close() method closes the file.
+      - Syntax:
+        python
+        file.close()
+        
+      
+   7. Using with Statement
+      - Automatically closes the file after execution.
+      - Example:
+        python
+        with open("example.txt", "r") as file:
+            content = file.read()
+            print(content)
+        
+
+   8. Renaming and Deleting Files
+      - os module is used for file operations.
+      - Example:
+        python
+        import os
+        os.rename("old_name.txt", "new_name.txt")
+        os.remove("new_name.txt")
+        
+
+________________________________________________________________________________
+
+III. Exception Handling
+
+   1. Introduction to Exceptions
+      - Errors in Python can be handled using exception handling.
+      - Common exceptions:
+        - ZeroDivisionError
+        - FileNotFoundError
+        - TypeError
+        - ValueError
+      
+   2. Try-Except Block
+      - Used to catch and handle errors.
+      - Syntax:
+        python
+        try:
+            # Code that may raise an error
+        except ExceptionType:
+            # Handle the error
+        
+      - Example:
+        python
+        try:
+            x = 10 / 0
+        except ZeroDivisionError:
+            print("Cannot divide by zero")
+        
+      
+   3. Multiple Exceptions
+      - Example:
+        python
+        try:
+            num = int(input("Enter a number: "))
+            result = 10 / num
+        except ZeroDivisionError:
+            print("Cannot divide by zero")
+        except ValueError:
+            print("Invalid input")
+        
+      
+   4. Finally Block
+      - Executes code regardless of exception occurrence.
+      - Example:
+        python
+        try:
+            file = open("example.txt", "r")
+        except FileNotFoundError:
+            print("File not found")
+        finally:
+            print("Execution complete")
+        
+      
+   5. Raising Exceptions
+      - raise is used to generate exceptions manually.
+      - Example:
+        python
+        age = -1
+        if age < 0:
+            raise ValueError("Age cannot be negative")
+        
+      
+   6. User-Defined Exceptions
+      - Custom exceptions can be created using classes.
+      - Example:
+        python
+        class CustomError(Exception):
+            pass
+        
+        try:
+            raise CustomError("This is a custom exception")
+        except CustomError as e:
+            print(e)
+        
+
+________________________________________________________________________________
+
+IV. Summary
+
+   - I/O Operations :  input(), print()
+   - File Handling : open(), read(), write(), append(), close()
+   - File Modes : 'r', 'w', 'a', 'x', 'b', 't'
+   - Exception Handling  : try-except, finally, raise, User-defined exceptions
+
+Proper file handling ensures efficient data management, while exception handling improves program stability by handling errors gracefully.
+
+________________________________________________________________________________
+

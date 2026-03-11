@@ -1,0 +1,300 @@
+What is the output of 2 + 3?
+4
+5
+6
+8
+5
+Which keyword is used to define a function in Python?
+def
+func
+function
+func()
+def
+Which of the following is a list in Python?
+[1, 2, 3]
+{1, 2, 3}
+(1, 2, 3)
+1,2,3
+[1, 2, 3]
+Which operator is used for exponentiation?
+^
+**
+*
+-
+**
+Which method is used to add an element to a list?
+append()
+add()
+insert()
+push()
+append()
+Which symbol is used to comment in Python?
+//
+#
+/*
+$
+#
+Which method is used to remove an item from a list?
+delete()
+remove()
+pop()
+update()
+remove()
+Which function is used to get input from the user?
+input()
+scanf()
+read()
+write()
+input()
+How do you print text in Python?
+echo
+print()
+write()
+scan()
+print()
+What is the default data type of input()?
+int
+string
+float
+boolean
+string
+Which function converts a string to an integer?
+int()
+float()
+str()
+array()
+int()
+How do you create an empty dictionary?
+{}
+[]
+()
+#
+{}
+Which method is used to sort a list?
+order()
+sort()
+arrange()
+sortd()
+sort()
+What is the keyword used to create a class in Python?
+class
+Class
+cls
+class
+class
+Which loop is used to iterate over a sequence?
+for
+while
+loop
+dowhile
+for
+How do you check the length of a list?
+len()
+size()
+length()
+height()
+len()
+Which module is used for regular expressions?
+regex
+re
+regexp
+regexx
+re
+Which method is used to read a file?
+read()
+open()
+fetch()
+write()
+read()
+Which function is used to get the maximum value from a list?
+max()
+largest()
+top()
+large()
+max()
+What is the result of 5 // 2?
+2.5
+2
+3
+5
+2
+How do you start a comment in Python?
+'
+//
+#
+\
+#
+Which method is used to convert a string to lowercase?
+lower()
+down()
+lowercase()
+Lowercase()
+lower()
+How do you create a tuple?
+[]
+{}
+()
+<>
+()
+Which function is used to open a file?
+open()
+file()
+read()
+write()
+open()
+What is the output of 3 * 'abc'?
+abcabc
+abcabcabc
+abc
+Error
+abcabcabc
+How do you create a set?
+set()
+{}
+[]
+<>
+set()
+Which method is used to remove whitespace from a string?
+strip()
+trim()
+remove()
+space()
+strip()
+Which operator is used to check equality?
+==
+=
+!=
+--
+==
+How do you declare a global variable inside a function?
+global
+Global
+var
+public
+global
+Which function is used to find the minimum value in a list?
+min()
+smallest()
+least()
+small()
+min()
+What will be the output of print(type([]))?
+list
+tuple
+dictionary
+set
+list
+What does the  is  operator compare?
+Values of variables
+Memory locations
+Data types
+none
+Memory locations
+How do you open a file in write mode?
+open("file.txt", "w")
+open("file.txt", "r")
+open("file.txt", "a")
+none
+open("file.txt", "w")
+Which of the following is used to handle exceptions in Python?
+catch
+try except
+none
+throw
+try except
+What will be the output of bool([])?
+ True
+False
+None
+true/false
+False
+Which of the following is an immutable data type?
+ list
+set
+tuple
+dictionary
+ tuple
+How do you remove an item from a set?
+remove()
+delete()
+ discard()
+ remove()
+remove()
+ How do you check if a key exists in a dictionary?
+ key in dict
+dict.hasKey()
+ dict.contains()
+ none
+key in dict
+What is the output of  bool(0) ?
+True
+False
+Error
+none
+False
+How do you concatenate two strings in Python?
++ 
+& 
+concat() 
+none
++ 
+what is the correct way to declare a set?
+{1, 2, 3} 
+[1, 2, 3] 
+(1, 2, 3) 
+none
+{1, 2, 3} 
+How do you iterate through a dictionary?
+for key in dict
+for key, value in dict.items()
+for value in dict
+none
+for key, value in dict.items()
+Which function returns the absolute value of a number?
+abs()
+absolute()
+fabs()
+none
+abs()
+Which operator is used for floor division?
+/
+//
+%
+none
+//
+What will  range(5)  generate?
+[0, 1, 2, 3, 4]
+[1, 2, 3, 4, 5]
+[0, 1, 2, 3, 4, 5]
+none
+[0, 1, 2, 3, 4]
+How do you define a multi line string?
+"""
+'''
+Both
+none
+Both
+what will  len({1,2,3,1,2})  return?
+3
+4
+5
+error
+3
+How do you create an infinite loop in Python?
+while True:
+for True:
+while 1:
+none
+while True:
+what does  zip()  do in Python?
+combines iterables
+Merges dictionaries
+Sorts lists
+none
+Combines iterables
+How do you reverse a list?
+list.reverse()
+list[::-1]
+Both
+none
+Both

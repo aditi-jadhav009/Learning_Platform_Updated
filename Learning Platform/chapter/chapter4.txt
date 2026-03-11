@@ -1,0 +1,185 @@
+____________________________________________________________
+|    Chapter 4 : Python Functions, Modules, and Packages  
+|___________________________________________________________
+
+Python provides a robust system of functions, modules, and packages that help in structuring and reusing code efficiently.
+ This unit covers built-in functions, user-defined functions, modules, and packages in depth.
+
+____________________________________________________________
+                          1. Python Functions
+____________________________________________________________
+
+Functions are blocks of reusable code that execute specific tasks. Python supports built-in functions and user-defined functions.
+
+1.1 Built-in Functions:
+   - Python includes numerous built-in functions like type(), int(), float(), len(), sum(), max(), min(), sorted(), round(), etc.
+   - Example:
+     python
+     numbers = [4, 7, 2, 9]
+     print(len(numbers))  # Output: 4
+     print(max(numbers))  # Output: 9
+     print(sum(numbers))  # Output: 22
+     
+
+1.2 User-defined Functions:
+   - These are created using the def keyword and can accept parameters, return values, and include local/global variables.
+   - Example:
+     python
+     def add(a, b):
+         return a + b
+     
+     result = add(5, 3)
+     print(result)  # Output: 8
+     
+
+1.3 Function Arguments and Parameter Passing:
+   - Python supports different types of function arguments:
+     - Positional Arguments
+     - Keyword Arguments
+     - Default Arguments
+     - Variable-length Arguments (args, kwargs)
+   - Example:
+     python
+     def greet(name, message="Hello"):
+         print(f"{message}, {name}!")
+     
+     greet("Alice")  # Output: Hello, Alice!
+     greet("Bob", "Good Morning")  # Output: Good Morning, Bob!
+     
+
+1.4 Scope of Variables:
+   - Global variables are accessible throughout the script.
+   - Local variables are only available inside functions.
+   - Example:
+     python
+     x = 10  # Global variable
+     
+     def func():
+         y = 5  # Local variable
+         print(x + y)
+     
+     func()  # Output: 15
+     
+
+____________________________________________________________
+                         2. Python Modules
+____________________________________________________________
+
+A module is a Python file containing functions, classes, and variables that can be reused in other programs.
+
+2.1 Writing a Module:
+   - Create a file mymodule.py:
+     python
+     def square(n):
+         return n  n
+     
+     def cube(n):
+         return n  n  n
+     
+   - Import and use the module:
+     python
+     import mymodule
+     print(mymodule.square(4))  # Output: 16
+     print(mymodule.cube(3))  # Output: 27
+     
+
+2.2 Importing Modules:
+   - Import full module: import math
+   - Import specific function: from math import sqrt
+   - Rename module: import numpy as np
+   - Example:
+     python
+     from math import sqrt
+     print(sqrt(25))  # Output: 5.0
+     
+
+2.3 Importing Objects from a Module:
+   - Example:
+     python
+     from mymodule import square
+     print(square(5))  # Output: 25
+     
+
+____________________________________________________________
+                        3. Python Packages
+____________________________________________________________
+
+A package is a collection of modules stored in a directory containing an __init__.py file.
+
+3.1 Creating a Package:
+   - Directory structure:
+     
+     mypackage/
+       __init__.py
+       module1.py
+       module2.py
+     
+   - module1.py:
+     python
+     def greet():
+         return "Hello from module1"
+     
+   - module2.py:
+     python
+     def welcome():
+         return "Welcome from module2"
+     
+
+3.2 Importing a Package:
+   - Example:
+     python
+     from mypackage import module1, module2
+     print(module1.greet())  # Output: Hello from module1
+     print(module2.welcome())  # Output: Welcome from module2
+     
+
+3.3 Installing External Packages:
+   - Use pip to install:
+     sh
+     pip install numpy
+     pip install pandas
+     
+   - Import installed package:
+     python
+     import numpy as np
+     
+
+____________________________________________________________
+                    4. Namespace and Scoping
+____________________________________________________________
+
+- Local Scope: Variables declared inside a function.
+- Global Scope: Variables declared outside functions.
+- Enclosing Scope: Variables in an outer function.
+- Built-in Scope: Python’s built-in functions.
+
+Example:
+python
+x = "global"
+
+def outer():
+    x = "enclosing"
+    
+    def inner():
+        x = "local"
+        print(x)  # Output: local
+    
+    inner()
+    print(x)  # Output: enclosing
+
+outer()
+print(x)  # Output: global
+
+
+____________________________________________________________
+|                        Summary
+|___________________________________________________________
+
+- Functions are reusable code blocks that accept parameters and return values.
+- Modules allow code reuse across multiple programs.
+- Packages organize multiple modules for better code management.
+- Use import to bring in modules and functions.
+- pip helps install external packages.
+
+Understanding functions, modules, and packages helps in writing efficient and scalable Python programs.
+
